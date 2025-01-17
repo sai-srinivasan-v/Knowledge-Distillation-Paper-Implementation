@@ -3,7 +3,6 @@ import torchvision as tv
 import torchvision.transforms as transform
 import torch.nn as nn
 import matplotlib.pyplot as plt
-from torch.nn import Conv2d, MaxPool2d, Flatten, Linear, Sequential
 from torch.optim import SGD,Adam
 from torch.optim.lr_scheduler import StepLR
 import torch.nn.functional as F
