@@ -28,5 +28,7 @@ The Student model was observed to have improved in accuracy post-distillation co
 
 This project is inspired by the paper "Distilling the Knowledge in a Neural Network" by Geoffrey Hinton, Oriol Vinyals, and Jeff Dean.
 
+Link to paper: https://arxiv.org/pdf/1503.02531
+
 For questions or contributions, feel free to contact me or submit a pull request!
 
