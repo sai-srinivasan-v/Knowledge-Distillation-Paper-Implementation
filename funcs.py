@@ -158,15 +158,4 @@ def trainWithDistillation(student_model,
     return avg_loss, epoch_acc
 
 
-def hparamToString(hparam):
-    hparam_str = ''
-    for k, v in sorted(hparam.items()):
-        hparam_str += k + '=' + str(v)+ ', '
-    return hparam_str
-
-def hparamDictToTuple(hparam):
-    hparam_tuple = [v for k,v in hparam.items()]
-    return tuple(hparam_tuple)
-
-
 
