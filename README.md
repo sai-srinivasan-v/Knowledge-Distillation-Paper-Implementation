@@ -1,4 +1,4 @@
-# Distilling the Knowledge in a Neural Network
+# Paper Re-implementation: Distilling the Knowledge in a Neural Network
 
 This project implements and explores knowledge distillation techniques, as described in the seminal paper "Distilling the Knowledge in a Neural Network". The aim is to train a 
 smaller, more efficient student model to mimic the behavior of a larger, more complex teacher model, preserving performance while reducing resource consumption.
