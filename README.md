@@ -10,10 +10,10 @@ The goal is to train a **smaller, more efficient Student model** that mimics the
 ---
 
 ## 📂 Project Structure  
-📂 funcs.py – Core helper functions for training and evaluation.
-📂 networks.py – Implementation of the Teacher and Student models.
-📒 teacher.ipynb – Jupyter Notebook for training the Teacher Model.
-📒 student.ipynb – Jupyter Notebook for training the Student Model using Knowledge Distillation.
+- 📂 funcs.py – Core helper functions for training and evaluation.
+- 📂 networks.py – Implementation of the Teacher and Student models.
+- 📒 teacher.ipynb – Jupyter Notebook for training the Teacher Model.
+- 📒 student.ipynb – Jupyter Notebook for training the Student Model using Knowledge Distillation.
 
 
 ---
