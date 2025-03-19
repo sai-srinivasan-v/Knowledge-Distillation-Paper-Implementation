@@ -1,34 +1,47 @@
-# Paper Re-implementation: Distilling the Knowledge in a Neural Network
+# 📚 Distilling the Knowledge in a Neural Network  
 
-This project implements and explores knowledge distillation techniques, as described in the seminal paper "Distilling the Knowledge in a Neural Network". The aim is to train a 
-smaller, more efficient student model to mimic the behavior of a larger, more complex teacher model, preserving performance while reducing resource consumption.
+🔍 **Paper Re-Implementation** | 🎯 **Knowledge Distillation for Efficient Models**  
 
-## Project Structure 
+This project implements and explores **Knowledge Distillation**, based on the seminal paper  
+[*"Distilling the Knowledge in a Neural Network"*](https://arxiv.org/pdf/1503.02531) by **Geoffrey Hinton, Oriol Vinyals, and Jeff Dean**.  
 
-funcs.py: Contains core helper functions for the project.
+The goal is to train a **smaller, more efficient Student model** that mimics the behavior of a **larger, more complex Teacher model**, preserving performance while reducing computational cost.  
 
-networks.py: Contains the teacher and student models implemented for the project.
+---
 
-teacher.ipynb: Jupyter Notebook for training the teacher model.
+## 📂 Project Structure  
+📂 funcs.py – Core helper functions for training and evaluation.
+📂 networks.py – Implementation of the Teacher and Student models.
+📒 teacher.ipynb – Jupyter Notebook for training the Teacher Model.
+📒 student.ipynb – Jupyter Notebook for training the Student Model using Knowledge Distillation.
 
-student.ipynb: Jupyter Notebook for training the student model using knowledge distillation.
 
+---
 
-## How it Works
+## 💡 How Knowledge Distillation Works  
 
-Knowledge Distillation
-Knowledge distillation is a technique where a teacher model trains a student model by transferring its learned knowledge. The student model learns not only from the true labels but also from the soft probabilities (soft targets) produced by the teacher model.
-This process is governed by a temperature parameter T and a weighting factor alpha to balance the contribution of distillation loss and true label loss.
+📌 **Knowledge Distillation** is a technique where a **large Teacher model** trains a **smaller Student model** by transferring knowledge. The student learns from:  
+✔ **True labels** (hard targets)  
+✔ **Soft probabilities** (soft targets) produced by the Teacher  
 
-# Results and Observations
-The temperature parameter (T) significantly influenced the student model's performance. Higher temperatures resulted in smoother probability distributions, aiding knowledge transfer.
-The Student model was observed to have improved in accuracy post-distillation compared to the models accuracy pre-distillation. 
+### 📏 Key Parameters  
+- **Temperature (T)** – Controls the softness of the Teacher’s probability distribution.  
+- **Alpha (α)** – Balances the contribution of **distillation loss** and **true label loss**.  
 
-## Acknowledgments
+---
 
-This project is inspired by the paper "Distilling the Knowledge in a Neural Network" by Geoffrey Hinton, Oriol Vinyals, and Jeff Dean.
+## 📊 Results & Key Observations  
 
-Link to paper: https://arxiv.org/pdf/1503.02531
+✔ **Higher temperature (T) values led to smoother probability distributions**, improving knowledge transfer.  
+✔ **The Student model’s accuracy improved post-distillation**, demonstrating the effectiveness of distillation.  
+✔ **A well-trained Student model required significantly fewer resources than the Teacher while maintaining strong performance.**  
 
-For questions or contributions, feel free to contact me or submit a pull request!
+📉 **Training Graphs & Accuracy Comparisons** *(Add visual results here if possible!)*  
 
+---
+
+## 🚀 Getting Started  
+
+### 1️⃣ Install Dependencies  
+```bash
+pip install torch torchvision numpy matplotlib
